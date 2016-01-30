@@ -11,7 +11,8 @@ module ForemanAnsible
 
     initializer 'foreman_ansible.register_plugin', :before => :finisher_hook do
       Foreman::Plugin.register :foreman_ansible do
-        requires_foreman '>= 1.11'
+        #requires_foreman '>= 1.11'
+        requires_foreman '>= 1.10'
       end
     end
 
